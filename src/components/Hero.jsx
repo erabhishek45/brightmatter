@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <div className='w-full py-40 '>
         <div className='container mx-auto px-6'>
-            <div className='flex items-center mx-auto gap-4 border border-primary/60 rounded-full pl-2 py-2 w-[25%] mb-12'>
+            <div className='flex items-center mx-auto gap-4 border border-primary/60 rounded-full pl-2 py-2 w-full text-xs md:text-base md:w-[25%] mb-12'>
               <div className='flex items-center -space-x-3'>
                 <img className='w-8 h-8 rounded-full object-cover object-center' src="https://cdn.pixabay.com/photo/2018/08/04/20/48/woman-3584435_1280.jpg" alt="" />
                 <img className='w-8 h-8 rounded-full object-cover object-center' src="https://cdn.pixabay.com/photo/2017/11/19/07/30/girl-2961959_640.jpg" alt="" />
