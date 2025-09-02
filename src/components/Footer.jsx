@@ -11,7 +11,7 @@ const Footer = () => {
                         <span className='text-dark text-2xl font-semibold'>Brightmatter.ai</span>
                         <div className='w-4 h-4 rounded-full bg-primary'></div>
                     </div>
-                    <p className='mb-4 text-dark/60'>From strategy to execution, we craft digital solutions that move your business forward.</p>
+                    <p className='mb-4 text-dark/60'>Whether you're launching a new business or looking to elevate your existing brand.</p>
                     <div className='py-2 flex items-center gap-6 font-semibold text-dark/70'>
                         <a href="#home">Home</a>
                         <a href="#sevices">Services</a>

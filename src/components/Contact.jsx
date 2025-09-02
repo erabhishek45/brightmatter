@@ -9,7 +9,7 @@ const Contact = () => {
         <div className='container mx-auto px-6'>
             <div className='text-center'>
                 <h1 className='text-4xl md:text-5xl text-dark mb-6'>Reach out to us</h1>
-                <p className='text-dark/60 max-w-xl mx-auto'>From strategy to execution, we craft digital solutions that move your business forward.</p>
+                <p className='text-dark/60 max-w-xl mx-auto'>Let’s talk! Whether it’s a quick question or a big project, we’re just a message away.</p>
             </div>
             <div className='max-w-2xl mx-auto mt-12'>
                 <form  >

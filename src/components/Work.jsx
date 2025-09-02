@@ -7,7 +7,7 @@ const Work = () => {
         <div className='container mx-auto px-6 sm:px-12 md:px-24 lg:px-40'>
             <div className='text-center mb-16'>
                 <h1 className='text-4xl md:text-5xl text-dark mb-6'>Our latest work</h1>
-                <p className='text-dark/60 max-w-2xl mx-auto text-xl'>From strategy to execution, we craft digital solutions that move your business forward.</p>
+                <p className='text-dark/60 max-w-2xl mx-auto text-xl'>Whether you're launching a new business or looking to elevate your existing brand</p>
             </div>
             <div className='grid grid-cols-1 md:grid-cols-3 gap-12'>
                 {workItems.map((work, index)=>(
