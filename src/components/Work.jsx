@@ -1,4 +1,5 @@
 import React from 'react'
+import { workItems } from '../assets/assets'
 
 const Work = () => {
   return (
@@ -9,29 +10,15 @@ const Work = () => {
                 <p className='text-dark/60 max-w-2xl mx-auto text-xl'>From strategy to execution, we craft digital solutions that move your business forward.</p>
             </div>
             <div className='grid grid-cols-1 md:grid-cols-3 gap-12'>
-                <div className='rounded-xl overflow-hidden border border-primary/50 hover:scale-105 duration-300 cursor-pointer'>
-                    <img src="https://cdn.pixabay.com/photo/2015/02/02/11/09/office-620822_640.jpg" alt="" />
+                {workItems.map((work, index)=>(
+                <div key={index} className='rounded-xl overflow-hidden border border-primary/50 hover:scale-105 duration-300 cursor-pointer'>
+                    <img src={work.image} alt="" />
                     <div className='mt-6 p-6'>
-                        <h1 className='text-xl text-dark'>Mobile marketing</h1>
-                        <p className='text-dark/60 mt-4'>We turn bold ideas into powerful digital solutions that connect, engage...</p>
+                        <h1 className='text-xl text-dark'>{work.title}</h1>
+                        <p className='text-dark/60 mt-4'>{work.description}</p>
                     </div>
-                </div>
-
-                <div className='rounded-xl overflow-hidden border border-primary/50 hover:scale-105 duration-300 cursor-pointer'>
-                    <img src="https://media.istockphoto.com/id/1407200725/photo/close-up-of-businessman-using-a-laptop-with-graphs-and-charts-on-a-laptop-computer.jpg?s=1024x1024&w=is&k=20&c=KUOh0j5B696E1T1A2s2TzoOCsUGKKC_QKz5iSXWYxdA=" alt="" />
-                    <div className='mt-6 p-6'>
-                        <h1 className='text-xl text-dark'>Dashboard management</h1>
-                        <p className='text-dark/60 mt-4'>We turn bold ideas into powerful digital solutions that connect, engage...</p>
-                    </div>
-                </div>
-
-                <div className='rounded-xl overflow-hidden border border-primary/50 hover:scale-105 duration-300 cursor-pointer'>
-                    <img src="https://cdn.pixabay.com/photo/2016/11/22/22/25/abs-1850926_640.jpg" alt="" />
-                    <div className='mt-6 p-6'>
-                        <h1 className='text-xl text-dark'>Fitness app promotion</h1>
-                        <p className='text-dark/60 mt-4'>We turn bold ideas into powerful digital solutions that connect, engage...</p>
-                    </div>
-                </div>
+                </div> 
+                ))}
             </div>
         </div>
     </div>

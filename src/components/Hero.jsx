@@ -1,4 +1,5 @@
 import React from 'react'
+import { assets } from '../assets/assets'
 
 const Hero = () => {
   return (
@@ -6,10 +7,10 @@ const Hero = () => {
         <div className='container mx-auto px-6'>
             <div className='flex items-center mx-auto gap-4 border border-primary/60 rounded-full pl-2 py-2 w-full text-xs md:text-base md:w-[25%] mb-12'>
               <div className='flex items-center -space-x-3'>
-                <img className='w-8 h-8 rounded-full object-cover object-center' src="https://cdn.pixabay.com/photo/2018/08/04/20/48/woman-3584435_1280.jpg" alt="" />
-                <img className='w-8 h-8 rounded-full object-cover object-center' src="https://cdn.pixabay.com/photo/2017/11/19/07/30/girl-2961959_640.jpg" alt="" />
-                <img className='w-8 h-8 rounded-full object-cover object-center' src="https://cdn.pixabay.com/photo/2018/07/28/09/23/woman-3567600_640.jpg" alt="" />
-                <img className='w-8 h-8 rounded-full object-cover object-center' src="https://cdn.pixabay.com/photo/2016/06/19/22/46/girl-1467820_640.jpg" alt="" />
+                <img className='w-8 h-8 rounded-full object-cover object-center' src={assets.profile1Img} alt="" />
+                <img className='w-8 h-8 rounded-full object-cover object-center' src={assets.profile2Img} alt="" />
+                <img className='w-8 h-8 rounded-full object-cover object-center' src={assets.profile3Img} alt="" />
+                <img className='w-8 h-8 rounded-full object-cover object-center' src={assets.profile4Img} alt="" />
               </div>
               <span>Trusted by 20k+ people</span>
             </div>
@@ -28,7 +29,7 @@ const Hero = () => {
             </div>
             
             <div className='max-w-5xl mx-auto mt-16 rounded-2xl shadow overflow-hidden'>
-              <img className='w-full h-full object-cover' src="https://cdn.pixabay.com/photo/2018/09/05/07/33/computer-3655665_640.jpg" alt="" />
+              <img className='w-full h-full object-cover' src={assets.heroImg} alt="" />
             </div>
         </div>
     </div>

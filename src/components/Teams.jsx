@@ -11,7 +11,7 @@ const Teams = () => {
             </div>
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8'>
                 {teams.map((team, index)=>(
-                <div key={index} className='rounded-xl overflow-hidden p-6 border border-primary/50 bg-white flex items-center gap-6'>
+                <div key={index} className='rounded-xl overflow-hidden p-6 border border-primary/50 bg-white flex items-center gap-6 hover:scale-105 duration-300 cursor-pointer'>
                     <img className='w-12 h-12 rounded-full object-cover' src={team.image} alt="" />
                     <div>
                         <h1 className='text-sm text-dark font-semibold'>{team.name}</h1>
